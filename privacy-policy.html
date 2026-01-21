@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
     <title>Privacy Policy - PVDSpot</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -31,6 +35,17 @@
     </script>
 
     <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dark .glass {
+            background: rgba(15, 23, 42, 0.3);
+            border: 1px solid rgba(255, 0, 51, 0.1);
+        }
+
         .gradient-text {
             background: linear-gradient(135deg, #FF0033 0%, #ff4d00 100%);
             background-clip: text;
@@ -49,9 +64,29 @@
                 radial-gradient(circle at 100% 100%, rgba(255, 0, 51, 0.05) 0%, transparent 40%);
         }
 
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: #FF0033; border-radius: 10px; }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #FF0033;
+            border-radius: 10px;
+        }
+
+        #cookie-banner {
+            transform: translateY(100%);
+            opacity: 0;
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        #cookie-banner.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
     </style>
 </head>
 
@@ -78,7 +113,7 @@
 
     <main class="pt-48 pb-24 px-6 relative">
         <div class="max-w-4xl mx-auto">
-            
+
             <header class="mb-16" data-aos="fade-up">
                 <h1 class="text-5xl md:text-7xl font-black leading-none tracking-tighter mb-6 uppercase">
                     PRIVACY <span class="gradient-text">POLICY</span>
@@ -87,16 +122,18 @@
                     Effective Date: January 19, 2026
                 </p>
             </header>
-            
+
             <div class="space-y-12 text-slate-600 dark:text-slate-400 leading-relaxed font-medium" data-aos="fade-up">
-                
+
                 <div class="p-8 rounded-[2.5rem] bg-brand-500/5 border border-brand-500/10 flex items-start gap-6">
                     <div class="p-4 bg-brand-500 text-white rounded-2xl shrink-0 hidden md:block">
                         <i data-lucide="shield-check" class="w-8 h-8"></i>
                     </div>
                     <div>
-                        <h2 class="text-2xl font-black text-slate-900 dark:text-white mb-3 uppercase tracking-tight">Our Privacy Commitment</h2>
-                        <p>At PVDSpot, we believe that privacy is a fundamental right. Our tools are designed to work without ever needing to store your personal files or sensitive information on our disks.</p>
+                        <h2 class="text-2xl font-black text-slate-900 dark:text-white mb-3 uppercase tracking-tight">Our
+                            Privacy Commitment</h2>
+                        <p>At PVDSpot, we believe that privacy is a fundamental right. Our tools are designed to work
+                            without ever needing to store your personal files or sensitive information on our disks.</p>
                     </div>
                 </div>
 
@@ -105,7 +142,9 @@
                         <span class="text-brand-500">01.</span> Data Collection
                     </h2>
                     <p>
-                        We do not collect personal identification information (PII). When you use our digital utilities, the processing happens locally in your browser (Client-Side) or via secure ephemeral memory that is wiped immediately after the task is completed.
+                        We do not collect personal identification information (PII). When you use our digital utilities,
+                        the processing happens locally in your browser (Client-Side) or via secure ephemeral memory that
+                        is wiped immediately after the task is completed.
                     </p>
                 </section>
 
@@ -113,7 +152,8 @@
                     <h2 class="text-2xl font-black text-slate-900 dark:text-white mb-4 flex items-center gap-3">
                         <span class="text-brand-500">02.</span> How We Use Information
                     </h2>
-                    <p>Any non-identifiable technical data (such as browser type or page visit duration) is used strictly for:</p>
+                    <p>Any non-identifiable technical data (such as browser type or page visit duration) is used
+                        strictly for:</p>
                     <ul class="list-disc ml-6 mt-4 space-y-2">
                         <li>Monitoring and maintaining the stability of our systems.</li>
                         <li>Improving the user experience and tool performance.</li>
@@ -126,7 +166,9 @@
                         <span class="text-brand-500">03.</span> Cookies & Tracking
                     </h2>
                     <p>
-                        We may use minimal cookies to remember your preferences (like Dark Mode). We do not use third-party tracking cookies for advertising purposes. You can disable cookies in your browser settings at any time without losing core functionality of our tools.
+                        We may use minimal cookies to remember your preferences (like Dark Mode). We do not use
+                        third-party tracking cookies for advertising purposes. You can disable cookies in your browser
+                        settings at any time without losing core functionality of our tools.
                     </p>
                 </section>
 
@@ -135,7 +177,9 @@
                         <span class="text-brand-500">04.</span> Data Security
                     </h2>
                     <p>
-                        We implement industry-standard security measures to protect PVDSpot. Since we do not store your files, the risk of data breaches involving your content is virtually non-existent. For tools that require server interaction, we use SSL/TLS encryption for all data in transit.
+                        We implement industry-standard security measures to protect PVDSpot. Since we do not store your
+                        files, the risk of data breaches involving your content is virtually non-existent. For tools
+                        that require server interaction, we use SSL/TLS encryption for all data in transit.
                     </p>
                 </section>
 
@@ -144,7 +188,9 @@
                         <span class="text-brand-500">05.</span> Third-Party Links
                     </h2>
                     <p>
-                        Our website may contain links to external sites. We are not responsible for the privacy practices or content of those websites. We encourage you to read the privacy policies of any site you visit.
+                        Our website may contain links to external sites. We are not responsible for the privacy
+                        practices or content of those websites. We encourage you to read the privacy policies of any
+                        site you visit.
                     </p>
                 </section>
 
@@ -153,7 +199,9 @@
                         <span class="text-brand-500">06.</span> Contact Us
                     </h2>
                     <p>
-                        If you have any questions regarding this Privacy Policy, please contact us at <a href="mailto:pvdspot@gmail.com">pvdspot@gmail.com</a>.
+                        If you have any questions regarding this Privacy Policy, please contact us at <a
+                            href="mailto:pvdspot@gmail.com"
+                            class="text-brand-500 hover:underline">pvdspot@gmail.com</a>.
                     </p>
                 </section>
 
@@ -203,6 +251,33 @@
         </div>
     </footer>
 
+    <div id="cookie-banner" class="fixed bottom-6 left-6 right-6 md:left-auto md:right-8 md:max-w-md z-[110]">
+        <div class="glass p-6 rounded-[2rem] shadow-2xl border-brand-500/20 flex flex-col gap-4">
+            <div class="flex items-start gap-4">
+                <div class="p-3 bg-brand-500/10 text-brand-500 rounded-xl">
+                    <i data-lucide="cookie" class="w-6 h-6"></i>
+                </div>
+                <div class="flex-1">
+                    <h4 class="text-sm font-black uppercase tracking-wider mb-1">Cookie Policy</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+                        We use cookies to enhance your browsing experience and analyze our traffic. By clicking
+                        <strong>Accept All</strong>, you consent to our use of cookies.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <button id="accept-cookies"
+                    class="flex-1 py-3 px-6 bg-brand-500 hover:bg-brand-600 text-white text-xs font-black rounded-xl transition-all shadow-lg shadow-brand-500/20 active:scale-95">
+                    ACCEPT ALL
+                </button>
+                <a href="/privacy-policy.html"
+                    class="px-4 py-3 text-[10px] font-bold text-slate-400 hover:text-brand-500 transition-colors uppercase tracking-widest">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 800, once: true, offset: 50 });
@@ -226,6 +301,7 @@
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             html.classList.add('dark');
             themeIcon.setAttribute('data-lucide', 'sun');
+            lucide.createIcons();
         }
 
         themeToggle.addEventListener('click', () => {
@@ -234,6 +310,27 @@
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
             themeIcon.setAttribute('data-lucide', isDark ? 'sun' : 'moon');
             lucide.createIcons();
+        });
+
+        const cookieBanner = document.getElementById('cookie-banner');
+        const acceptBtn = document.getElementById('accept-cookies');
+
+        window.addEventListener('DOMContentLoaded', () => {
+            if (!localStorage.getItem('cookies-accepted')) {
+                setTimeout(() => {
+                    cookieBanner.classList.add('show');
+                }, 1500);
+            } else {
+                cookieBanner.remove();
+            }
+        });
+
+        acceptBtn.addEventListener('click', () => {
+            localStorage.setItem('cookies-accepted', 'true');
+            cookieBanner.classList.remove('show');
+            setTimeout(() => {
+                cookieBanner.remove();
+            }, 600);
         });
     </script>
 </body>
