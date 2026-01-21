@@ -1,3 +1,3 @@
 # PVDSpot
 
-Visit site: [https://pvdspot.com](https://pvdspot.com)
+Visit site: [https://pvdspot.com/](https://pvdspot.com/)
